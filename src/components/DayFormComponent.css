@@ -1,0 +1,144 @@
+/* Container styling for centering the form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff; /* Light background color for contrast */
+  padding: 20px;
+}
+
+/* Styling for the form title */
+.form-title {
+  font-size: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #4CAF50; /* Matching the form's theme color */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Main form styling */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  max-width: 900px;
+  background-color: #ddefd9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  gap: 30px;
+  border: 2px solid #4CAF50; /* Green border for a polished look */
+}
+
+/* Form group styling for left and right sections */
+.form-group {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Align left section's text to the left */
+.left {
+  text-align: left;
+}
+
+/* Align right section's text to the right */
+.right {
+  text-align: left;
+}
+
+/* Label styling for a cleaner, bolder look */
+label {
+  display: block;
+  font-weight:bold;
+  margin-bottom: 8px;
+  color: #333; /* Darker text for labels */
+}
+
+/* Input field styling */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+/* Hover and focus effect for input fields */
+input:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle shadow */
+}
+
+/* Submit button styling */
+.submit-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Button styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border:none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover and active effects */
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+  background-color: #3e8e41;
+  transform: translateY(0); /* Return to original position */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .form {
+    width: 90%; /* Make form width smaller on smaller screens */
+    padding: 20px;
+  }
+
+  .form-group {
+    min-width: 100%; /* Make form groups stack vertically */
+  }
+}
+/* Additional styling for the select dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Subtle shadow */
+}
+/* Error message styling */
+.error-message {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
